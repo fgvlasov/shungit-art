@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  &_cash {
+    width: 30%;
+  }
+  &_logo {
+  }
+  &_cart {
+    width: 30%;
+    text-align: right;
+    .quantity-raw {
+      border-radius: 10px;
+      background: #2b855c;
+      height: 20px;
+      color: #ffffff;
+      display: inline-block;
+      min-width: 20px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 18px;
+      font-size: 12px;
+      padding: 1px 4px 0 4px;
+    }
+  }
+}
+.nav {
+  ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-flex;
+      margin: 10px;
+    }
+  }
+}
