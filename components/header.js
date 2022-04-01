@@ -22,11 +22,7 @@ export default function Header() {
       </Head>
       <header className={styles.header}>
 		<div className={styles.header_cash}>
-			<select className="form-control form-select" id="edit-selected-currency" name="selected_currency">
-				<option value="EUR">€</option>
-				<option value="USD" selected="selected">$</option>
-			</select>
-		</div>
+ddd		</div>
 	  	<Link className={styles.header_logo} href="/">
 		 <a><Image src="/logo_shu.svg" alt="Shungit Art" width={100} height={110} /></a>
 	  	</Link>

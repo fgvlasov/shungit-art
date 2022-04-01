@@ -1,11 +1,16 @@
 import useSWR from 'swr'
 import styles from "../styles/Pages.module.scss"
 import Layout from '../components/layout'
+import Product from '../components/product'
 
 const fetcher = (url) => fetch(url).then((res) => res.json())
 
 export default function Page() {
-  return (
+  const { data, error } = useSWR('/api/cards', fetcher)
+
+  if (error) return <div>Failed to load</div>
+  if (!data) return <div>Loading...</div>
+	return (
   <>
       <div className={styles.grid}>
         <h1 className={styles.title}> SHUNGIT </h1>
@@ -19,6 +24,11 @@ export default function Page() {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
+		    <ul>
+      {data.map((p, i) => (
+        <Product key={i} product={p} />
+      ))}
+    </ul>
     </>
   )
 }
