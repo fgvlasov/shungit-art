@@ -16,9 +16,8 @@ a {
 .wrapper { 
 	display: flex;
     flex-direction: column;
-    height: 100%;
 	padding: 30px;
-	height: 100vh;
+	min-height: 100vh;
 }
 header, nav, footer{
    flex: 0 0 auto;
@@ -28,4 +27,9 @@ main{
 }
 a:hover, a.active {
     color: #2b855c;
+}
+h1 {
+	font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }

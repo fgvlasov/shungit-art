@@ -4,9 +4,9 @@ import Image from 'next/image'
 import styles from "../styles/Header.module.scss"
 
 const path = [
-  { uid: 21, name: ' About', id: 1, path: 'About' },
-  { uid: 31, name: 'Catalog', id: 2, path: 'Catalog' },
-  { uid: 41, name: 'Gallery', id: 3, path: 'Gallery' }
+  { uid: 21, name: ' About', id: 1, path: 'about' },
+  { uid: 31, name: 'Catalog', id: 2, path: 'catalog' },
+  { uid: 41, name: 'Gallery', id: 3, path: 'gallery' }
 ];
 export default function Header() {
   return (

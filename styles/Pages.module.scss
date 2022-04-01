@@ -1,0 +1,12 @@
+.page_text {
+  width: 70%;
+  margin: 0 auto;
+  .paragraf {
+    text-align: justify;
+  }
+}
+@media all and (max-width: 767px) {
+  .page_text {
+    width: 100%;
+  }
+}

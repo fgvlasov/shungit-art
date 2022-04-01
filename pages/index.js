@@ -1,13 +1,12 @@
+import useSWR from 'swr'
 import styles from "../styles/Pages.module.scss"
 import Layout from '../components/layout'
+
+const fetcher = (url) => fetch(url).then((res) => res.json())
 
 export default function Page() {
   return (
   <>
-      {/* use head and add meta tag in head component  */}
-
-      {/* use layout and add other ui component  */}
-
       <div className={styles.grid}>
         <h1 className={styles.title}> SHUNGIT </h1>
         <p className={styles.paragraf}>
