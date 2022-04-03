@@ -1,34 +1,36 @@
-import useSWR from 'swr'
+import Image from 'next/image'
+import Link from 'next/link'
 import styles from "../styles/Pages.module.scss"
 import Layout from '../components/layout'
-import Product from '../components/product'
-
-const fetcher = (url) => fetch(url).then((res) => res.json())
+import Products from '../components/ProductSlider'
 
 export default function Page() {
-  const { data, error } = useSWR('/api/cards', fetcher)
-
-  if (error) return <div>Failed to load</div>
-  if (!data) return <div>Loading...</div>
 	return (
   <>
-      <div className={styles.grid}>
-        <h1 className={styles.title}> SHUNGIT </h1>
-        <p className={styles.paragraf}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+      <div className={styles.main_links}>
+        <div className={styles.main_links_type}>
+			<Link href="/products/shungite-art">
+		 		<a><Image src="/cat_1.jpg" alt="Shungit Art" width={300} height={300} /></a>
+	  		</Link>
+			<div className={styles.main_links_title}><Link href="/type/shungite-art">Shungite Art</Link></div>
+			<div className={styles.main_links_starting}>Starting at $25</div>
+		</div>
+        <div className={styles.main_links_type}>
+			<Link href="/products/shungite-models">
+		 		<a><Image src="/cat_shungite.jpg" alt="Shungit Models" width={300} height={300} /></a>
+	  		</Link>
+			<div className={styles.main_links_title}><Link href="/type/shungite-models">Shungite Models</Link></div>
+			<div className={styles.main_links_starting}>Starting at $20</div>
+		</div>
+        <div className={styles.main_links_type}>
+			<Link href="/products/stained-glass">
+		 		<a><Image src="/12.jpg" alt="Stained glass" width={300} height={300} /></a>
+	  		</Link>
+			<div className={styles.main_links_title}><Link href="/type/stained-glass">Stained glass</Link></div>
+			<div className={styles.main_links_starting}>Starting at $20</div>
+		</div>
       </div>
-		    <ul>
-      {data.map((p, i) => (
-        <Product key={i} product={p} />
-      ))}
-    </ul>
+	  <Products />
     </>
   )
 }

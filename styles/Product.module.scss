@@ -1,0 +1,10 @@
+.pr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &_title {
+    font-weight: 700;
+  }
+  &_price {
+  }
+}

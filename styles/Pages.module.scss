@@ -5,7 +5,36 @@
     text-align: justify;
   }
 }
+.main_links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  &_type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &_title {
+    font-weight: 700;
+    margin: 15px 0 5px 0;
+  }
+}
+.slider {
+  border-top: 1px solid #eaeaea;
+  margin-top: 30px;
+  padding-top: 30px;
+  &_title {
+    font-size: 24px;
+    color: #e80000;
+    margin-bottom: 30px;
+  }
+}
 @media all and (max-width: 767px) {
+  .main_links {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content max-content;
+  }
   .page_text {
     width: 100%;
   }

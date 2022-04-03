@@ -5,7 +5,7 @@ import styles from "../styles/Header.module.scss"
 
 const path = [
   { uid: 21, name: ' About', id: 1, path: 'about' },
-  { uid: 31, name: 'Catalog', id: 2, path: 'catalog' },
+  { uid: 31, name: 'Products', id: 2, path: 'products' },
   { uid: 41, name: 'Gallery', id: 3, path: 'gallery' }
 ];
 export default function Header() {
