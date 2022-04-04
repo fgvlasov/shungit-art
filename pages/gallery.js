@@ -1,4 +1,3 @@
-import styles from "../styles/Pages.module.scss"
 import Layout from '../components/layout'
 
 import PropTypes from 'prop-types'

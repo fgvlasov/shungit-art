@@ -1,17 +1,19 @@
 .catalog_title {
 }
 .catalog {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: max-content max-content;
-  gap: 15px;
+  display: flex;
+  flex-direction: column;
   &_filter {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 30px auto;
+    font-size: 20px;
     &_title {
       margin-bottom: 10px;
     }
     &_item {
       margin-left: 15px;
-      .active-link {
+      a.active-link {
         color: #2b855c;
       }
     }
@@ -28,10 +30,6 @@
   }
 }
 @media all and (max-width: 767px) {
-  .catalog {
-    grid-template-columns: 1fr;
-    grid-template-rows: max-content max-content;
-  }
   .catalog_list {
     grid-template-columns: 1fr 1fr;
   }

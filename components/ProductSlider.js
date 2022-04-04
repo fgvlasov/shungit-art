@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { Slide } from "react-slideshow-image"
 import 'react-slideshow-image/dist/styles.css'
 import useSWR from 'swr'
@@ -7,8 +6,10 @@ import styles from "../styles/Pages.module.scss"
 
 const fetcher = (url) => fetch(url).then((res) => res.json())
 
+
 export default function Products({ product }) {
-  const { data, error } = useSWR('/api/cards', fetcher)
+
+  const { data, error } = useSWR('/api/cards?page=${pageIndex}', fetcher)
 
   if (error) return <div>Failed to load</div>
   if (!data) return <div>Loading...</div>

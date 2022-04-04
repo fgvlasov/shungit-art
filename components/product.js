@@ -4,16 +4,16 @@ import styles from "../styles/Product.module.scss"
 
 export default function Product({ product }) {
   return (
-    <div className={styles.pr}>
+    <div className={styles.pr_item}>
 	  <Link href="/product/[id]" as={`/product/${product.id}`}>
 		<a><Image src={product.image} alt={product.title} width={320} height={320} /></a>
 	  </Link>
-	  <div className={styles.pr_title}>
+	  <div className={styles.pr_item_title}>
 		<Link href="/product/[id]" as={`/product/${product.id}`}>
           <a>{product.title}</a>
         </Link>
 	  </div>
-	  <div className={styles.pr_price}>{product.price}</div>
+	  <div className={styles.pr_item_price}>$ {product.price}</div>
     </div>
   )
 }
