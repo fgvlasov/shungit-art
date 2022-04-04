@@ -7,7 +7,7 @@ import styles from "../../styles/Product.module.scss"
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
-import cartReducer from './components/reducers/cartReducer';
+import cartReducer from '../../components/reducers/cartReducer';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
@@ -41,18 +41,9 @@ export default function Product() {
 	  <div className={styles.pr_title}>
 		{data.title}
 	  </div>
-	  <div className={styles.pr_price}>$ {data.price}</div>		 
+	  <div className={styles.pr_price}>$ {data.price}</div>
+	  <Provider store={store}></Provider>		 
 	 </div>
 
   )
 }
-	{/*
-
-          <td>{data.title}</td>
-          <td>{data.price}</td>
-          <td>{data.parameters}</td>
-          <td>{data.materials}</td>
-          <td>{data.colors}</td>
-          <td>{data.type}</td>
-
-  */}

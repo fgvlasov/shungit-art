@@ -4,6 +4,13 @@ import styles from "../styles/Pages.module.scss"
 import Layout from '../components/layout'
 import Products from '../components/ProductSlider'
 
+import React from 'react'
+import cartReducer from '../components/reducers/cartReducer'
+import { Provider } from 'redux'
+import { createStore } from 'redux'
+
+const store = createStore(cartReducer);
+
 export default function Page() {
 	return (
   <>
@@ -35,10 +42,13 @@ export default function Page() {
   )
 }
 
+
 Page.getLayout = function getLayout(page) {
   return (
-    <Layout>
-      {page}
-    </Layout>
+    <Provider store={store}>
+		<Layout>
+			{page}
+	  	</Layout>
+	</Provider>
   )
 }

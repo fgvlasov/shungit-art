@@ -1,8 +1,6 @@
-import Layout from '../components/layout'
-
-import PropTypes from 'prop-types'
 import React from 'react'
-import ReactDOM from 'react-dom'
+import Layout from '../components/layout'
+import PropTypes from 'prop-types'
 import Gallery from '../components/Gallery/Gallery'
 
 class Photos extends React.Component {
