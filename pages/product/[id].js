@@ -3,17 +3,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import useSWR from 'swr'
 import styles from "../../styles/Product.module.scss"
-
 import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './App'
-import cartReducer from '../../components/reducers/cartReducer';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
 
-const store = createStore(cartReducer);
-
-//ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 
 const fetcher = async (url) => {
   const res = await fetch(url)
@@ -42,7 +33,6 @@ export default function Product() {
 		{data.title}
 	  </div>
 	  <div className={styles.pr_price}>$ {data.price}</div>
-	  <Provider store={store}></Provider>		 
 	 </div>
 
   )

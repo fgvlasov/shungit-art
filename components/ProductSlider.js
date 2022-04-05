@@ -1,7 +1,7 @@
 import { Slide } from "react-slideshow-image"
 import 'react-slideshow-image/dist/styles.css'
 import useSWR from 'swr'
-import Product from '../components/product'
+import Product from './Product'
 import styles from "../styles/Pages.module.scss"
 
 const fetcher = (url) => fetch(url).then((res) => res.json())

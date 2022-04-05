@@ -1,7 +1,8 @@
-import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY,ADD_SHIPPING } from '../actions/action-types/cart-actions'
+import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY,ADD_SHIPPING } from './types'
 
+import cards from '../data'
 
-const initState = {
+{/*const initState = {
     items: [
         {id:1,title:'Winter body', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:110},
         {id:2,title:'Adidas', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:80},
@@ -12,9 +13,9 @@ const initState = {
     ],
     addedItems:[],
     total: 0
+}*/}
 
-}
-const cartReducer= (state = initState,action)=>{
+const CartReducer= (state = cards,action)=>{
    
     //INSIDE HOME COMPONENT
     if(action.type === ADD_TO_CART){
@@ -95,7 +96,7 @@ const cartReducer= (state = initState,action)=>{
           }
     }
 
-    if(action.type=== 'SUB_SHIPPING'){
+    if(action.type=== SUB_SHIPPING){
         return{
             ...state,
             total: state.total - 6
@@ -108,4 +109,4 @@ const cartReducer= (state = initState,action)=>{
     
 }
 
-export default cartReducer
+export default CartReducer

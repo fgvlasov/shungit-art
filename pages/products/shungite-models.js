@@ -1,5 +1,5 @@
 import useSWR from 'swr'
-import Product from '../../components/product'
+import Product from '../../components/Product'
 import CatalogMenu from '../../components/CatalogMenu'
 import styles from "../../styles/Catalog.module.scss"
 

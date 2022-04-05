@@ -1,5 +1,8 @@
-
-import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY,ADD_SHIPPING} from './action-types/cart-actions'
+export const ADD_TO_CART = 'ADD_TO_CART'
+export const REMOVE_ITEM = 'REMOVE_ITEM'
+export const SUB_QUANTITY = 'SUB_QUANTITY'
+export const ADD_QUANTITY = 'ADD_QUANTITY'
+export const ADD_SHIPPING = 'ADD_SHIPPING'
 
 //add cart action
 export const addToCart= (id)=>{
@@ -15,17 +18,20 @@ export const removeItem=(id)=>{
         id
     }
 }
-//subtract qt action
+//subtract quantity action
 export const subtractQuantity=(id)=>{
     return{
         type: SUB_QUANTITY,
         id
     }
 }
-//add qt action
+//add quantity action
 export const addQuantity=(id)=>{
     return{
         type: ADD_QUANTITY,
         id
     }
 }
+
+
+export default rootReducer

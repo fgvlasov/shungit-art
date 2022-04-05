@@ -1,15 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from "../styles/Pages.module.scss"
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import Products from '../components/ProductSlider'
 
-import React from 'react'
-import cartReducer from '../components/reducers/cartReducer'
-import { Provider } from 'redux'
-import { createStore } from 'redux'
-
-const store = createStore(cartReducer);
 
 export default function Page() {
 	return (
@@ -45,10 +39,8 @@ export default function Page() {
 
 Page.getLayout = function getLayout(page) {
   return (
-    <Provider store={store}>
 		<Layout>
 			{page}
 	  	</Layout>
-	</Provider>
   )
 }

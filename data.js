@@ -1,4 +1,6 @@
-export const cards = [
+export const cards = {
+
+	items: [
 {
     id: '1',    
     title: 'Shungite Birch Leaf v1',    
@@ -971,4 +973,7 @@ export const cards = [
     type: 'Shungite Models',    
     colors: 'grey'
     },
-]
+],
+    addedItems:[],
+    total: 0
+}
