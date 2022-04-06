@@ -1,26 +1,23 @@
-import { LOAD_CART, ADD_ITEM , REMOVE_ITEM} from './types';
+import { LOAD_CART, ADD_ITEM } from './types';
 import { cards } from '../data';
 
 const initialState = {
     loading: false,
     error: false,
-	total: 0,
     cart: []
 };
+
 /*Логика такая: надо при нажатии кнопки Добавить в корзину взять id товара и добавить в массив добавленных в корзину товаров.
 При этом надо также знать число добавленных товаров в корзину total , чтобы вывести это число в компоненте Header.js
 */
 export const cartReducer = (state = initialState, action) => {
-
-	switch (action.type) {
+    switch (action.type) {
         case LOAD_CART:
             return { ...state, loading: false, error: false, cart: cards };
         case ADD_ITEM:
-            return { ...state, loading: false, error: false, total: state.total + 1};
+            return { ...state, loading: false, error: false, cart: [...state.cart, action.item] };
         default: return state;
     }
-
-
 };
 
 {/*

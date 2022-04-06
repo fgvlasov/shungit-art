@@ -6,17 +6,16 @@ export const loadCart = () => {
   };
 };
 
-export const addItem = id => {
+export const addItem = item => {
   return {
     type: ADD_ITEM,
-    id: id
+    item
   };
 };
 
-//remove item action
-export const removeItem = id =>{
-    return{
-        type: REMOVE_ITEM,
-        id
-    }
-}
+export const removeItem = id => {
+  return {
+    type: REMOVE_ITEM,
+    id
+  };
+};
