@@ -15,7 +15,7 @@ export default function Header() {
 	  <Head>
         <title>Shungite Art</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
 		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
 	
       </Head>
@@ -26,7 +26,9 @@ export default function Header() {
 	  	<Link className={styles.header_logo} href="/">
 		 <a><Image src="/logo_shu.svg" alt="Shungit Art" width={100} height={110} /></a>
 	  	</Link>
-		<CartIcon />
+		<div className={styles.header_cart}>
+			<CartIcon />
+		</div>
 	  </header>
 	  <nav  className={styles.nav}>
         <ul className="">

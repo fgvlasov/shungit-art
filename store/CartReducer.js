@@ -7,6 +7,7 @@ const initialState = {
     cart: []
 };
 
+ 
 export const cartReducer = (state = initialState, action) => {
     switch (action.type) {
         case LOAD_CART:

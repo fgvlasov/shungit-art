@@ -8,12 +8,12 @@ export default function CartIcon(props) {
 	const items = cart.cart;
 
 	return (
-		<div className="header_cart">
-			<Link href="/cart">Bag: </Link>
+		<>
+			<Link href="/cart">Cart:</Link>&nbsp;
 			<span className="quantity-raw">
 				{/*надо тут вывести количество добавленных в корзину товаров, то есть state.total*/}
 				{items.length ? <span>{items.length}</span> : 0}
 			</span>
-		</div>
+		</>
 	);
 }
