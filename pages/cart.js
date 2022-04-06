@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 import styles from "../styles/Cart.module.scss";
 
-export default function Page() {
+const Cart = () => {
 	const dispatch = useDispatch();
 	const cart = useSelector(state => state.cart);
 	const items = cart.cart;
@@ -58,4 +58,6 @@ export default function Page() {
 			}
 		</div >
 	);
-}
+};
+
+export default Cart;
