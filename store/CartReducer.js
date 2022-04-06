@@ -10,7 +10,7 @@ const initialState = {
 export const cartReducer = (state = initialState, action) => {
     switch (action.type) {
         case LOAD_CART:
-            return { ...state, loading: false, error: false, cart: [] };
+            return { ...state, loading: false, error: false, cart: [...state.cart] };
         case ADD_ITEM:
             return { ...state, loading: false, error: false, cart: [...state.cart, action.item] };
         case REMOVE_ITEM:
