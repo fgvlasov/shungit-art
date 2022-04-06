@@ -1,3 +1,10 @@
+import { combineReducers } from 'redux';
+import { cartReducer } from './cartReducer';
+
+export const rootReducer = combineReducers({
+    cart: cartReducer
+});
+{/*
 export const ADD_TO_CART = 'ADD_TO_CART'
 export const REMOVE_ITEM = 'REMOVE_ITEM'
 export const SUB_QUANTITY = 'SUB_QUANTITY'
@@ -35,3 +42,4 @@ export const addQuantity=(id)=>{
 
 
 export default rootReducer
+*/}

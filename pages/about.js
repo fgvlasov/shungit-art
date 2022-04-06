@@ -1,5 +1,4 @@
 import styles from "../styles/Pages.module.scss"
-import Layout from '../components/layout'
 
 export default function Page() {
   return (
@@ -15,13 +14,5 @@ export default function Page() {
 			<p className={styles.paragraf}>The combination of the beauty of nature and its useful properties, gives our products uniqueness and originality that will allow you to stand out against the background of your friends.</p>
       </div>
     </>
-  )
-}
-
-Page.getLayout = function getLayout(page) {
-  return (
-    <Layout>
-      {page}
-    </Layout>
   )
 }

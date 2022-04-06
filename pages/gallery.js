@@ -1,5 +1,4 @@
 import React from 'react'
-import Layout from '../components/layout'
 import PropTypes from 'prop-types'
 import Gallery from '../components/Gallery/Gallery'
 
@@ -161,13 +160,5 @@ export default function Page() {
 	<h1>Gallery of Shungit crafts</h1>
 	<div id="Photos"><Photos /></div>
     </>
-  )
-}
-
-Page.getLayout = function getLayout(page) {
-  return (
-    <Layout>
-      {page}
-    </Layout>
   )
 }

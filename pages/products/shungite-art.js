@@ -17,7 +17,6 @@ export default function Products({ product }) {
 		<div className={styles.catalog}>
 			<CatalogMenu />
 		  <div className={styles.catalog_list}>
-
       		{data.map((p, i) => {
         		if(p.type == 'Shungite Art'){
 				  return (
@@ -26,8 +25,7 @@ export default function Products({ product }) {
 				}
 			  }
 			)}
-
-      	</div>
+      	  </div>
 		</div>
 	</>
   )

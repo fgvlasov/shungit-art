@@ -1,11 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from "../styles/Pages.module.scss"
-import Layout from '../components/Layout'
 import Products from '../components/ProductSlider'
 
-
 export default function Page() {
+
 	return (
   <>
       <div className={styles.main_links}>
@@ -33,14 +32,5 @@ export default function Page() {
       </div>
 	  <Products />
     </>
-  )
-}
-
-
-Page.getLayout = function getLayout(page) {
-  return (
-		<Layout>
-			{page}
-	  	</Layout>
   )
 }
