@@ -1,6 +1,6 @@
 export const cards = [
 {
-    id: '1',    
+    id: 1,    
     title: 'Shungite Birch Leaf v1',    
     image: '/Product_display_images/Shungite Birch Leaf v1.jpg',
     body: ' Shungite Birch Leaf, The pendant is oval in shape, has a decorative and health-improving function. The pendant is made of shungite plate, mineral glass, tin and skeletonized birch leaf.',
@@ -12,7 +12,7 @@ export const cards = [
     colors: 'silvery white, Black, beige'
     },
 {
-    id: '2',    
+    id: 2,    
     title: 'Shungite Birch Leaf v2',    
     image: '/Product_display_images/Shungite Birch Leaf v2.jpg',
     body: 'Shungite Birch Leaf . The pendant is of a kaple form, it has a decorative and revitalizing function. The pendant is made of shungite plate, mineral glass, tin and skeletonized birch leaf.',
@@ -24,7 +24,7 @@ export const cards = [
     colors: 'silvery white, Black, beige'
     },
 {
-    id: '3',    
+    id: 3,    
     title: 'Shungite Bird v1',    
     image: '/Product_display_images/Shungite Bird v1.jpg',
     body: 'Shungite Bird. Pendant in the form of a birds head, has a decorative and revitalizing function. Pendant is made of shungite plate, tin',
@@ -36,7 +36,7 @@ export const cards = [
     colors: 'silvery white, Black'
     },
 {
-    id: '4',    
+    id: 4,    
     title: 'Shungite Blueberries v1',    
     image: '/Product_display_images/Shungite Blueberries v1.jpg',
     body: 'The pendant is oval in shape, has a decorative and health-improving function. The pendant is made of shungite plate, mineral glass, tin and an insert from sheets of Karelian blueberries',
@@ -48,7 +48,7 @@ export const cards = [
     colors: 'silvery white, Black, vinous, orange'
     },
 {
-    id: '5',    
+    id: 5,    
     title: 'Shungite Blueberries v2',    
     image: '/Product_display_images/Shungite Blueberries v2.jpg',
     body: 'The pendant is square in shape, has a decorative and revitalizing function. The pendant is made of shungite plate, mineral glass, tin and an insert from sheets of Karelian blueberries.',
@@ -60,7 +60,7 @@ export const cards = [
     colors: 'silvery white, vinous, orange'
     },
 {
-    id: '6',    
+    id: 6,    
     title: 'Shungite Blueberries v3',    
     image: '/Product_display_images/Shungite Blueberries v3.jpg',
     body: 'The pendant is square in shape, has a decorative and revitalizing function. The pendant is made of shungite plate, mineral glass, tin and an insert from sheets of Karelian blueberries.',
@@ -72,7 +72,7 @@ export const cards = [
     colors: 'silvery white, vinous, orange'
     },
 {
-    id: '7',    
+    id: 7,    
     title: 'Shungite Conium Maculatum',    
     image: '/Product_display_images/Shungite Conium Maculatum.jpg',
     body: 'Pendant of rhomboid shape. Shungite Conium Maculatum, has a decorative and health-improving effects. The pendant is made of shungite plate, mineral glass and tin it comes with an insertion of inflorescence of Karelian Conium Maculatum.',
@@ -84,7 +84,7 @@ export const cards = [
     colors: 'silvery white, White, green'
     },
 {
-    id: '8',    
+    id: 8,    
     title: 'Shungite Drop.jpg',    
     image: '/Product_display_images/Shungite Drop.jpg',
     body: 'The pendant is teardrop shaped, has a decorative and health-improving function. The pendant is made of shungite plate, mineral glass.',
@@ -96,7 +96,7 @@ export const cards = [
     colors: 'silvery white, Black'
     },
 {
-    id: '9',    
+    id: 9,    
     title: 'Shungite Earrings Birch Leaf',    
     image: '/Product_display_images/Shungite Earrings Birch Leaf.jpg',
     body: 'Earrings, repeating the natural form of the leaf, have a decorative and revitalizing function. Earrings are made of shungite plate, mineral glass, tin and skeletonized birch leaf .',
@@ -108,7 +108,7 @@ export const cards = [
     colors: 'silvery white, Black, beige'
     },
 {
-    id: '10',    
+    id: 10,    
     title: 'Shungite Earrings',    
     image: '/Product_display_images/Shungite Earrings.jpg',
     body: ' Earrings consisting of sequentially connected shungite beads. Have a decrotitive and health-improving effect ',
@@ -120,7 +120,7 @@ export const cards = [
     colors: 'silvery white, Black'
     },
 {
-    id: '11',    
+    id: 11,    
     title: 'Shungite Elongated Earrings',    
     image: '/Product_display_images/Shungite Elongated Earrings.jpg',
     body: 'Earrings with an elongated drop-shaped shape have a decorative and health-improving function. Earrings are made of shungite plate, tin.',
@@ -132,7 +132,7 @@ export const cards = [
     colors: 'silvery white, Black'
     },
 {
-    id: '12',    
+    id: 12,    
     title: 'Shungite Fish',    
     image: '/Product_display_images/Shungite Fish.jpg',
     body: 'Pendant in the form of fish, has a decorative and health-improving function. The pendant is made of shungite plate, tin.',
@@ -144,7 +144,7 @@ export const cards = [
     colors: 'silvery white, Black'
     },
 {
-    id: '13',    
+    id: 13,    
     title: 'Shungite Forget-Me-Not',    
     image: '/Product_display_images/Shungite Forget-Me-Not.jpg',
     body: 'The rectangular pendant has a decorative and revitalizing function. The pendant is made of a shungite plate, mineral glass, tin and a Forget-Me-Not bloom insert.',
@@ -156,7 +156,7 @@ export const cards = [
     colors: 'silvery white, Black, blue'
     },
 {
-    id: '14',    
+    id: 14,    
     title: 'Shungite Meadowsweet',    
     image: '/Product_display_images/Shungite Meadowsweet.jpg',
     body: 'The pendant is oval in shape, has a decorative and health-improving function. The pendant is made of shungite plate, mineral glass, tin and insertion of the inflorescence of Shungite Karelian Meadowsweet.',
@@ -168,7 +168,7 @@ export const cards = [
     colors: 'silvery white, Black, White'
     },
 {
-    id: '15',    
+    id: 15,    
     title: 'Shungite Moss Rectangle',    
     image: '/Product_display_images/Shungite Moss Rectangle.jpg',
     body: 'The rectangular pendant has a decorative and revitalizing function. The pendant is made of shungite plate, mineral glass, tin and Moss Rectangle insert',
@@ -180,7 +180,7 @@ export const cards = [
     colors: 'silvery white, Black, grey'
     },
 {
-    id: '16',    
+    id: 16,    
     title: 'Shungite Moss Square',    
     image: '/Product_display_images/Shungite Moss Square.jpg',
     body: 'The square shape pendant has a decorative and health-improving function. The pendant is made of shungite plate, mineral glass, tin and Moss Square insert.',
@@ -192,7 +192,7 @@ export const cards = [
     colors: 'silvery white, Black, grey'
     },
 {
-    id: '17',    
+    id: 17,    
     title: 'Shungite Oxalis v1',    
     image: '/Product_display_images/Shungite Oxalis v1.jpg',
     body: 'The pendant is oval in shape, has a decorative and health-improving function. The pendant is made of shungite plate, mineral glass, tin and insertion of the Oxalis flower.',
@@ -204,7 +204,7 @@ export const cards = [
     colors: 'silvery white, Black, White'
     },
 {
-    id: '18',    
+    id: 18,    
     title: 'Shungite Oxalis v2',    
     image: '/Product_display_images/Shungite Oxalis v2.jpg',
     body: 'The pendant is rectangular in shape, has a decorative and revitalizing function. The pendant is made of shungite plate, mineral glass, tin and insertion of the Oxalis flower.',
@@ -216,7 +216,7 @@ export const cards = [
     colors: 'silvery white, Black, White'
     },
 {
-    id: '19',    
+    id: 19,    
     title: 'Shungite Oxalis v3',    
     image: '/Product_display_images/Shungite Oxalis v3.jpg',
     body: 'The pendant is oval in shape, has a decorative and health-improving function. The pendant is made of shungite plate, mineral glass, tin and insertion of the Oxalis flower.',
@@ -228,7 +228,7 @@ export const cards = [
     colors: 'silvery white, Black, White'
     },
 {
-    id: '20',    
+    id: 20,    
     title: 'Shungite Pendant on the Neck',    
     image: '/Product_display_images/Shungite Pendant on the Neck.jpg',
     body: 'The pendant is rectangular in shape, has a decorative and revitalizing function. The pendant is made of shungite plate, mineral glass, tin.',
@@ -240,7 +240,7 @@ export const cards = [
     colors: 'silvery white, Black'
     },
 {
-    id: '21',    
+    id: 21,    
     title: 'Shungite Strawberries Oval',    
     image: '/Product_display_images/Shungite Strawberries Oval.jpg',
     body: 'The pendant is oval in shape, has a decorative and health-improving function. The pendant is made of shungite plate, mineral glass, tin and insertion of the Strawberry flower.',
@@ -252,7 +252,7 @@ export const cards = [
     colors: 'silvery white, Black'
     },
 {
-    id: '22',    
+    id: 22,    
     title: 'Shungite Strawberries Rectangle',    
     image: '/Product_display_images/Shungite Strawberries Rectangle.jpg',
     body: 'The pendant is rectangular in shape, has a decorative and revitalizing function. The pendant is made of a shungite plate, mineral glass, tin and an insert of the Strawberriy flow',
@@ -264,7 +264,7 @@ export const cards = [
     colors: 'silvery white, Black'
     },
 {
-    id: '23',    
+    id: 23,    
     title: 'Shungite Yarrow',    
     image: '/Product_display_images/Shungite Yarrow.jpg',
     body: 'The pendant is teardrop shaped, has a decorative and health-improving function. The pendant is made of a shungite plate, mineral glass, tin and an insert of the Yarrow inflorescence.',
@@ -276,7 +276,7 @@ export const cards = [
     colors: 'silvery white, Black'
     },
 {
-    id: '24',    
+    id: 24,    
     title: 'Blueberry Spiraea Pansy',    
     image: '/Product_display_images/Blueberry Spiraea Pansy.jpg',
     body: 'Blueberry Spiraea Pansy, The pendant is rectangular shape , has a decorative function. The pendant is made of mineral glass, tin solder and Blueberry leaf.',
@@ -288,7 +288,7 @@ export const cards = [
     colors: 'silvery white, red, yellow, blue'
     },
 {
-    id: '25',    
+    id: 25,    
     title: 'Brooch Owl',    
     image: '/Product_display_images/Brooch Owl.jpg',
     body: 'This beautiful stained glass brooch Owl can be made in any color. Red, Yellow, Orange and Pink can also be purchased for an additional $20.00.  These googly-eyed owls are great fun with glass nuggets for eyes and wire outlining the wings. They are great for presents, lovely hanging in a window, or on a mirror. Everyone is individual and different and can be any colour. I make these stained glass hanging pieces using the copper foiling technique. They are finished with a loop on the back and supplied with ribbon and a suction hook ',
@@ -300,7 +300,7 @@ export const cards = [
     colors: 'silvery white, blue, pink'
     },
 {
-    id: '26',    
+    id: 26,    
     title: 'Brooch Snowman',    
     image: '/Product_display_images/Brooch Snowman.jpg',
     body: 'This Glass snowman is sure to bring in the jolly cheer!made with gorgeous festive artisan glass ',
@@ -312,7 +312,7 @@ export const cards = [
     colors: 'silvery white, White, blue'
     },
 {
-    id: '27',    
+    id: 27,    
     title: 'Decorative pendant Bilberry',    
     image: '/Product_display_images/Decorative pendant Bilberry.jpg',
     body: ' Handmade glass pendants with blueberry leaf *remember that it`s made with real flowers so they can look different from the photo or may be slightly yellow it`s ok for natural materials!',
@@ -324,7 +324,7 @@ export const cards = [
     colors: 'silvery white, red'
     },
 {
-    id: '28',    
+    id: 28,    
     title: 'Decorative pendant Leaf',    
     image: '/Product_display_images/Decorative pendant Leaf.jpg',
     body: ' Handmade glass pendants with forest leaf *remember that it`s made with real flowers so they can look different from the photo or may be slightly yellow it`s ok for natural materials!',
@@ -336,7 +336,7 @@ export const cards = [
     colors: 'silvery white, orange'
     },
 {
-    id: '29',    
+    id: 29,    
     title: 'Earrings Rain',    
     image: '/Product_display_images/Earrings Rain.jpg',
     body: 'Each piece is handmade and is unique in shape, color and size. Wrapped with copper foil and soldered with lead-free solder and a jump ring added these earrings are ready to go.',
@@ -348,7 +348,7 @@ export const cards = [
     colors: 'silvery white, blue'
     },
 {
-    id: '30',    
+    id: 30,    
     title: 'Decorative panel - Ship',    
     image: '/Product_display_images/Decorative panel-Ship.jpg',
     body: 'This original stained glass painting of the sea and Viking vessel Drakkar was designed as a window to an interior door. But it can also be used as a wall hanging, suncatcher or a glass panel. ',
@@ -360,7 +360,7 @@ export const cards = [
     colors: 'silvery white, brown, White, orange, green'
     },
 {
-    id: '31',    
+    id: 31,    
     title: 'Decorative panel - Fern',    
     image: '/Product_display_images/Decorative panel-Fern.jpg',
     body: 'We dried the fern flowers and then created a little arrangement between two pieces of glass. It all holds together with eco-friendly, lead free tin. ',
@@ -372,7 +372,7 @@ export const cards = [
     colors: 'green, brown'
     },
 {
-    id: '32',    
+    id: 32,    
     title: 'Decorative panel- Houses',    
     image: '/Product_display_images/Decorative panel-Houses.jpg',
     body: 'Stained Glass Houses Suncatcher panel. Made with light opalescent brown glass for the house, red tint for the roof. Cathedral green and white for the trees and a nice black for the chimney. Framed with a wooden frame.',
@@ -384,7 +384,7 @@ export const cards = [
     colors: 'silvery white, green, yellow, red, White, blue'
     },
 {
-    id: '33',    
+    id: 33,    
     title: 'Earrings Ray',    
     image: '/Product_display_images/Earrings Ray.jpg',
     body: 'Each piece is handmade and is unique in shape, color and size. Wrapped with copper foil and soldered with lead-free solder and a jump ring added these earrings are ready to go.',
@@ -396,7 +396,7 @@ export const cards = [
     colors: 'silvery white, yellow'
     },
 {
-    id: '34',    
+    id: 34,    
     title: 'Earrings Spark',    
     image: '/Product_display_images/Earrings Spark.jpg',
     body: 'Each piece is handmade and is unique in shape, color and size. Wrapped with copper foil and soldered with lead-free solder and a jump ring added these earrings are ready to go.',
@@ -408,7 +408,7 @@ export const cards = [
     colors: 'silvery white, red'
     },
 {
-    id: '35',    
+    id: 35,    
     title: 'Earrings Splash',    
     image: '/Product_display_images/Earrings Splash.jpg',
     body: 'Each piece is handmade and is unique in shape, color and size. Wrapped with copper foil and soldered with lead-free solder and a jump ring added these earrings are ready to go.',
@@ -420,7 +420,7 @@ export const cards = [
     colors: 'silvery white, blue'
     },
 {
-    id: '36',    
+    id: 36,    
     title: 'Moomintroll with fishing rod',    
     image: '/Product_display_images/Moomintroll with fishing rod.jpg',
     body: 'He’s an agreeable fellow who’s interested in everything he sees.  Moomintroll thinks that Moominvalley is the safest and most interesting place in the world. That’s why he’s so curious and brave – he can fulfil his desire to understand strange things and weird creatures without the need to fear them. The only thing that makes Moomintroll feel bad is being left alone.',
@@ -432,7 +432,7 @@ export const cards = [
     colors: 'silvery white, White, red'
     },
 {
-    id: '37',    
+    id: 37,    
     title: 'Moomintroll with book',    
     image: '/Product_display_images/Moomintroll with book.jpg',
     body: 'He’s an agreeable fellow who’s interested in everything he sees.  Moomintroll thinks that Moominvalley is the safest and most interesting place in the world. That’s why he’s so curious and brave – he can fulfil his desire to understand strange things and weird creatures without the need to fear them. The only thing that makes Moomintroll feel bad is being left alone.',
@@ -444,7 +444,7 @@ export const cards = [
     colors: 'silvery white, yellow'
     },
 {
-    id: '38',    
+    id: 38,    
     title: 'Moomintroll with flower',    
     image: '/Product_display_images/Moomintroll with flower.jpg',
     body: 'He’s an agreeable fellow who’s interested in everything he sees.  Moomintroll thinks that Moominvalley is the safest and most interesting place in the world. That’s why he’s so curious and brave – he can fulfil his desire to understand strange things and weird creatures without the need to fear them. The only thing that makes Moomintroll feel bad is being left alone.',
@@ -456,7 +456,7 @@ export const cards = [
     colors: 'silvery white, White, red, green'
     },
 {
-    id: '39',    
+    id: 39,    
     title: 'Pendant Birch Leaf #1',    
     image: '/Product_display_images/Pendant Birch leaf.jpg',
     body: 'Round pendant with real birtch Leaf inside. Convex round glass makes a loupe effect. Leaf is very carefully placed between clear Convex drop glass . Hand made from clear glass and eco friendly tin using a soldering iron. It is made with tiffany technique.This kind of necklace make your appearance with a lot of femininity and charm, it is very suitable as a gift or for yourself.',
@@ -468,7 +468,7 @@ export const cards = [
     colors: 'silvery white, red, beige'
     },
 {
-    id: '40',    
+    id: 40,    
     title: 'Pendant Birch Leaf #2',    
     image: '/Product_display_images/Pendant_Birch_leaf_2.jpg',
     body: 'Round pendant with real birtch Leaf inside. Convex round glass makes a loupe effect. Leaf is very carefully placed between clear Convex drop glass . Hand made from clear glass and eco friendly tin using a soldering iron. It is made with tiffany technique.This kind of necklace make your appearance with a lot of femininity and charm, it is very suitable as a gift or for yourself.',
@@ -480,7 +480,7 @@ export const cards = [
     colors: 'silvery white, Black, beige'
     },
 {
-    id: '41',    
+    id: 41,    
     title: 'Pendant Blueberry Green',    
     image: '/Product_display_images/Pendant Blueberry Green.jpg',
     body: 'Round pendant with real blueberry Leaf inside. Convex round glass makes a loupe effect. Leaf is very carefully placed between clear Convex drop glass . Hand made from clear glass and eco friendly tin using a soldering iron. It is made with tiffany technique.This kind of necklace make your appearance with a lot of femininity and charm, it is very suitable as a gift or for yourself.',
@@ -492,7 +492,7 @@ export const cards = [
     colors: 'silvery white, green, red, orange'
     },
 {
-    id: '42',    
+    id: 42,    
     title: 'Pendant Chamomile #2',    
     image: '/Product_display_images/Pendant_Chamomile_2.jpg',
     body: 'Round pendant with real Chamomile flower inside. Convex round glass makes a loupe effect. Leaf is very carefully placed between clear Convex drop glass . Hand made from clear glass and eco friendly tin using a soldering iron. It is made with tiffany technique.This kind of necklace make your appearance with a lot of femininity and charm, it is very suitable as a gift or for yourself.',
@@ -504,7 +504,7 @@ export const cards = [
     colors: 'silvery white, blue, White, yellow'
     },
 {
-    id: '43',    
+    id: 43,    
     title: 'Pendant Chamomile #3',    
     image: '/Product_display_images/Pendant_Chamomile_3.jpg',
     body: 'Round pendant with real Chamomile flower inside. Convex round glass makes a loupe effect. Leaf is very carefully placed between clear Convex drop glass . Hand made from clear glass and eco friendly tin using a soldering iron. It is made with tiffany technique.This kind of necklace make your appearance with a lot of femininity and charm, it is very suitable as a gift or for yourself.',
@@ -516,7 +516,7 @@ export const cards = [
     colors: 'silvery white, Black, White, yellow'
     },
 {
-    id: '44',    
+    id: 44,    
     title: 'Pendant Chamomile ',    
     image: '/Product_display_images/Pendant Chamomile.jpg',
     body: 'Round pendant with real Chamomile flower inside. Convex round glass makes a loupe effect. Leaf is very carefully placed between clear Convex drop glass . Hand made from clear glass and eco friendly tin using a soldering iron. It is made with tiffany technique.This kind of necklace make your appearance with a lot of femininity and charm, it is very suitable as a gift or for yourself.',
@@ -528,7 +528,7 @@ export const cards = [
     colors: 'silvery white, Black, White, yellow'
     },
 {
-    id: '45',    
+    id: 45,    
     title: 'Pendant Geranium',    
     image: '/Product_display_images/Pendant Geranium.jpg',
     body: 'Round pendant with real Geranium  flower inside. Convex round glass makes a loupe effect. Leaf is very carefully placed between clear Convex drop glass . Hand made from clear glass and eco friendly tin using a soldering iron. It is made with tiffany technique.This kind of necklace make your appearance with a lot of femininity and charm, it is very suitable as a gift or for yourself.',
@@ -540,7 +540,7 @@ export const cards = [
     colors: 'silvery white, blue, green'
     },
 {
-    id: '46',    
+    id: 46,    
     title: 'Pendant Heather',    
     image: '/Product_display_images/Pendant_Heather.jpg',
     body: 'Round pendant with real Heather  flower inside. Convex round glass makes a loupe effect. Leaf is very carefully placed between clear Convex drop glass . Hand made from clear glass and eco friendly tin using a soldering iron. It is made with tiffany technique.This kind of necklace make your appearance with a lot of femininity and charm, it is very suitable as a gift or for yourself.',
@@ -552,7 +552,7 @@ export const cards = [
     colors: 'silvery white, green, lilac'
     },
 {
-    id: '47',    
+    id: 47,    
     title: 'Pendant Hemlock Black',    
     image: '/Product_display_images/Pendant_Hemlock_Black.jpg',
     body: 'Round pendant with real Hemlock  flower inside. Convex round glass makes a loupe effect. Leaf is very carefully placed between clear Convex drop glass . Hand made from clear glass and eco friendly tin using a soldering iron. It is made with tiffany technique.This kind of necklace make your appearance with a lot of femininity and charm, it is very suitable as a gift or for yourself.',
@@ -564,7 +564,7 @@ export const cards = [
     colors: 'silvery white, Black, green, White'
     },
 {
-    id: '48',    
+    id: 48,    
     title: 'Pendant Hemlock Blue',    
     image: '/Product_display_images/Pendant_Hemlock_Blue.jpg',
     body: 'Round pendant with real Hemlock  flower inside. Convex round glass makes a loupe effect. Leaf is very carefully placed between clear Convex drop glass . Hand made from clear glass and eco friendly tin using a soldering iron. It is made with tiffany technique.This kind of necklace make your appearance with a lot of femininity and charm, it is very suitable as a gift or for yourself.',
@@ -576,7 +576,7 @@ export const cards = [
     colors: 'silvery white, blue, green, White, yellow'
     },
 {
-    id: '49',    
+    id: 49,    
     title: 'Pendant Hemlock Red',    
     image: '/Product_display_images/Pendant_Hemlock_Red.jpg',
     body: 'Round pendant with real Hemlock  flower inside. Convex round glass makes a loupe effect. Leaf is very carefully placed between clear Convex drop glass . Hand made from clear glass and eco friendly tin using a soldering iron. It is made with tiffany technique.This kind of necklace make your appearance with a lot of femininity and charm, it is very suitable as a gift or for yourself.',
@@ -588,7 +588,7 @@ export const cards = [
     colors: 'silvery white, red, green, White, yellow'
     },
 {
-    id: '50',    
+    id: 50,    
     title: 'Pendant Pansy',    
     image: '/Product_display_images/Pendant Pansy.jpg',
     body: 'Round pendant with real Pancy  flower inside. Convex round glass makes a loupe effect. Leaf is very carefully placed between clear Convex drop glass . Hand made from clear glass and eco friendly tin using a soldering iron. It is made with tiffany technique.This kind of necklace make your appearance with a lot of femininity and charm, it is very suitable as a gift or for yourself.',
@@ -600,7 +600,7 @@ export const cards = [
     colors: 'silvery white, yellow, blue, White'
     },
 {
-    id: '51',    
+    id: 51,    
     title: 'Pendant Reindeer Moss',    
     image: '/Product_display_images/Pendant Reindeer Moss.jpg',
     body: 'Round pendant with real Reindeer Moss inside. Convex round glass makes a loupe effect. Leaf is very carefully placed between clear Convex drop glass . Hand made from clear glass and eco friendly tin using a soldering iron. It is made with tiffany technique.This kind of necklace make your appearance with a lot of femininity and charm, it is very suitable as a gift or for yourself.',
@@ -612,7 +612,7 @@ export const cards = [
     colors: 'silvery white, blue, grey'
     },
 {
-    id: '52',    
+    id: 52,    
     title: 'Pendant Strawberry Blue',    
     image: '/Product_display_images/Pendant Strawberry Blue.jpg',
     body: 'Round pendant with real Strawberry flower inside. Convex round glass makes a loupe effect. Leaf is very carefully placed between clear Convex drop glass . Hand made from clear glass and eco friendly tin using a soldering iron. It is made with tiffany technique.This kind of necklace make your appearance with a lot of femininity and charm, it is very suitable as a gift or for yourself.',
@@ -624,7 +624,7 @@ export const cards = [
     colors: 'silvery white, blue, White, yellow, green'
     },
 {
-    id: '53',    
+    id: 53,    
     title: 'Pendant Strawberry Yellow',    
     image: '/Product_display_images/Pendant Strawberry Yellow.jpg',
     body: 'Round pendant with real Strawberry flower inside. Convex round glass makes a loupe effect. Leaf is very carefully placed between clear Convex drop glass . Hand made from clear glass and eco friendly tin using a soldering iron. It is made with tiffany technique.This kind of necklace make your appearance with a lot of femininity and charm, it is very suitable as a gift or for yourself.',
@@ -636,7 +636,7 @@ export const cards = [
     colors: 'silvery white, yellow, White, green'
     },
 {
-    id: '54',    
+    id: 54,    
     title: 'Suncatcher Angel',    
     image: '/Product_display_images/Suncatcher Angel.jpg',
     body: 'Everyone needs an angel to watch over them. You can give this angel beloved on Valentines Day and Christmas. Why not hang one in glass for all to see. Care of your new stained glass: Gently clean with a soft cloth and mild soap if needed. Dry with a soft cloth.  Each is hand made and may look slightly different from the one on the pictures. This is due to the low reproducibility of glass and amber which it is made of. If you want to change the colors in this work, you can contact me previously before make an order.',
@@ -648,7 +648,7 @@ export const cards = [
     colors: 'silvery white, blue, red, orange'
     },
 {
-    id: '55',    
+    id: 55,    
     title: 'Suncatcher Angel with herbarium',    
     image: '/Product_display_images/Suncatcher Angel with herbarium.jpg',
     body: 'Everyone needs an angel to watch over them. You can give this angel beloved on Valentines Day and Christmas. Why not hang one in glass for all to see. Care of your new stained glass: Gently clean with a soft cloth and mild soap if needed. Dry with a soft cloth.  Each is hand made and may look slightly different from the one on the pictures. This is due to the low reproducibility of glass and amber which it is made of. If you want to change the colors in this work, you can contact me previously before make an order.',
@@ -660,7 +660,7 @@ export const cards = [
     colors: 'silvery white, green, beige'
     },
 {
-    id: '56',    
+    id: 56,    
     title: 'Suncatcher Blue moose',    
     image: '/Product_display_images/Suncatcher Blue moose.jpg',
     body: 'I saw this beautiful picture of a moose in the cartoon and made it into the panel you see.',
@@ -672,7 +672,7 @@ export const cards = [
     colors: 'silvery white, blue'
     },
 {
-    id: '57',    
+    id: 57,    
     title: 'Suncatcher Blue whale',    
     image: '/Product_display_images/Suncatcher Blue whale.jpg',
     body: 'Cute and Friendly looking stained glass whale with beautiful blue glass. (Can be made in any custom color) His belly can be made with white or black glass.',
@@ -684,7 +684,7 @@ export const cards = [
     colors: 'silvery white, blue'
     },
 {
-    id: '58',    
+    id: 58,    
     title: 'Suncatcher Owl',    
     image: '/Product_display_images/Suncatcher Owl.jpg',
     body: 'This beautiful stained glass brooch Owl can be made in any color. Red, Yellow, Orange and Pink can also be purchased for an additional $20.00.  These googly-eyed owls are great fun with glass nuggets for eyes and wire outlining the wings. They are great for presents, lovely hanging in a window, or on a mirror. Everyone is individual and different and can be any colour. I make these stained glass hanging pieces using the copper foiling technique. They are finished with a loop on the back and supplied with ribbon and a suction hook',
@@ -696,7 +696,7 @@ export const cards = [
     colors: 'silvery white, blue, red'
     },
 {
-    id: '59',    
+    id: 59,    
     title: 'Suncatcher Parrot',    
     image: '/Product_display_images/Suncatcher Parrot.jpg',
     body: 'A delightful hand made stained glass Parrot suncatcher. Very low upkeep, doesnt eat much, just needs the occasional clean. Hang it n the window and see the many colors come to life in the sun.',
@@ -708,7 +708,7 @@ export const cards = [
     colors: 'silvery white, beige, red, blue, green'
     },
 {
-    id: '60',    
+    id: 60,    
     title: 'Suncatcher Parrot#2',    
     image: '/Product_display_images/Suncatcher_Parrot_2.jpg',
     body: 'A delightful hand made stained glass Parrot suncatcher. Very low upkeep, doesnt eat much, just needs the occasional clean. Hang it n the window and see the many colors come to life in the sun.',
@@ -720,7 +720,7 @@ export const cards = [
     colors: 'silvery white, White, red, blue, green, brown'
     },
 {
-    id: '61',    
+    id: 61,    
     title: 'Suncatcher Red Sun',    
     image: '/Product_display_images/Suncatcher Red Sun.jpg',
     body: 'Stained Glass Sun Panel, Window Decor, Suncatcher Beautiful tropical sun in a bright red mixed glass',
@@ -732,7 +732,7 @@ export const cards = [
     colors: 'silvery white, red'
     },
 {
-    id: '62',    
+    id: 62,    
     title: 'Suncatcher Wedding Moomintroll',    
     image: '/Product_display_images/Suncatcher wedding Moomintroll.jpg',
     body: 'This cute little Moomintroll couple makes the perfect cake topper or decoration for your wedding',
@@ -744,7 +744,7 @@ export const cards = [
     colors: 'silvery white, red, blue, Black'
     },
 {
-    id: '63',    
+    id: 63,    
     title: 'Suncatcher Yellow moose',    
     image: '/Product_display_images/Suncatcher Yellow moose.jpg',
     body: 'I saw this beautiful picture of a moose in the cartoon and made it into the panel you see.',
@@ -756,7 +756,7 @@ export const cards = [
     colors: 'silvery white, yellow'
     },
 {
-    id: '64',    
+    id: 64,    
     title: 'Harmonizers cylinder of Shungite and Talk',    
     image: '/Product_display_images/Harmonizers of Shungite.jpg',
     body: '',
@@ -768,7 +768,7 @@ export const cards = [
     colors: 'Black, grey'
     },
 {
-    id: '65',    
+    id: 65,    
     title: 'Shungite tumbled stones',    
     image: '/Product_display_images/Shungite_tumbled_stones.jpg',
     body: '',
@@ -780,7 +780,7 @@ export const cards = [
     colors: 'Black'
     },
 {
-    id: '66',    
+    id: 66,    
     title: 'Harmoniser Balls polished',    
     image: '/Product_display_images/Harmoniser Balls polished.jpg',
     body: '',
@@ -792,7 +792,7 @@ export const cards = [
     colors: 'Black, grey'
     },
 {
-    id: '67',    
+    id: 67,    
     title: 'Shungite Cubes',    
     image: '/Product_display_images/Shungite Cubes.jpg',
     body: '',
@@ -804,7 +804,7 @@ export const cards = [
     colors: 'Black'
     },
 {
-    id: '68',    
+    id: 68,    
     title: 'Shungite Crystals Noble (5-15gr) (ELITE)',    
     image: '/Product_display_images/Shungite_Crystals_Noble_(ELITE)_v1.jpg',
     body: '',
@@ -816,7 +816,7 @@ export const cards = [
     colors: 'Black'
     },
 {
-    id: '69',    
+    id: 69,    
     title: 'Shungite pendants Crystals Noble (ELITE)',    
     image: '/Product_display_images/Shungite pendants Crystals Noble (ELITE) v1.jpg',
     body: '',
@@ -828,7 +828,7 @@ export const cards = [
     colors: 'Black'
     },
 {
-    id: '70',    
+    id: 70,    
     title: 'Shungite pendants Crystals Noble (ELITE)',    
     image: '/Product_display_images/Shungite pendants Crystals Noble (ELITE) v1.jpg',
     body: '',
@@ -840,7 +840,7 @@ export const cards = [
     colors: 'Black'
     },
 {
-    id: '71',    
+    id: 71,    
     title: 'Shungite Merkaba',    
     image: '/Product_display_images/Shungite Merkaba v1.jpg',
     body: '',
@@ -852,7 +852,7 @@ export const cards = [
     colors: 'Black'
     },
 {
-    id: '72',    
+    id: 72,    
     title: 'Shungite Merkaba',    
     image: '/Product_display_images/Shungite Merkaba v1.jpg',
     body: '',
@@ -864,7 +864,7 @@ export const cards = [
     colors: 'Black'
     },
 {
-    id: '73',    
+    id: 73,    
     title: 'Shungite Horse',    
     image: '/Product_display_images/Shungite_Horse.jpg',
     body: '',
@@ -876,7 +876,7 @@ export const cards = [
     colors: 'Black'
     },
 {
-    id: '74',    
+    id: 74,    
     title: 'Shungite Bear',    
     image: '/Product_display_images/Shungite Bear.jpg',
     body: '',
@@ -888,7 +888,7 @@ export const cards = [
     colors: 'Black'
     },
 {
-    id: '75',    
+    id: 75,    
     title: 'Sphere of shungite polished',    
     image: '/Product_display_images/Sphere of shungite polished.jpg',
     body: '',
@@ -900,7 +900,7 @@ export const cards = [
     colors: 'Black'
     },
 {
-    id: '76',    
+    id: 76,    
     title: 'Shungite fridge magnets',    
     image: '/Product_display_images/Shungite fridge magnets.jpg',
     body: '',
@@ -912,7 +912,7 @@ export const cards = [
     colors: 'Black'
     },
 {
-    id: '77',    
+    id: 77,    
     title: 'Circular shungite plate for cell phone, polished',    
     image: '/Product_display_images/',
     body: '',
@@ -924,7 +924,7 @@ export const cards = [
     colors: 'Black'
     },
 {
-    id: '78',    
+    id: 78,    
     title: 'High shungite pyramid polished',    
     image: '/Product_display_images/High shungite pyramid polished.jpg',
     body: '',
@@ -936,7 +936,7 @@ export const cards = [
     colors: 'Black'
     },
 {
-    id: '79',    
+    id: 79,    
     title: 'Polished shungite pyramid v1',    
     image: '/Product_display_images/Polished shungite pyramid v1.jpg',
     body: '',
@@ -948,7 +948,7 @@ export const cards = [
     colors: 'Black'
     },
 {
-    id: '80',    
+    id: 80,    
     title: 'Polished shungite pyramid v2',    
     image: '/Product_display_images/Polished shungite pyramid v2.jpg',
     body: '',
@@ -960,7 +960,7 @@ export const cards = [
     colors: 'Black'
     },
 {
-    id: '81',    
+    id: 81,    
     title: 'Stones for whiskey',    
     image: '/Product_display_images/stones_for_whiskey_v1.jpg',
     body: '',
@@ -971,4 +971,4 @@ export const cards = [
     type: 'Shungite Models',    
     colors: 'grey'
     },
-]
+]  

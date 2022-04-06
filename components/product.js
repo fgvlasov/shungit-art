@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from "../styles/Product.module.scss"
 
 import {useDispatch} from 'react-redux'
-import {addItem} from '../store/actions'
+import {addItem, removeItem} from '../store/actions'
 
 export default function Product({ product }) {
  
@@ -20,8 +20,8 @@ export default function Product({ product }) {
         </Link>
 	  </div>
 	  <div className={styles.pr_item_price}>$ {product.price}</div>
-	  <button className={styles.pr_item_add} onClick={()=> dispatch(addItem(product.id))}>Добавить в корзину</button>
+	  <button className={styles.pr_item_add} onClick={()=> dispatch(addItem(product))}>Добавить в корзину</button>
+	  <button className={styles.pr_item_add} onClick={()=> dispatch(removeItem(product.id))}>Удалить из корзины {product.id}</button>
     </div>
   )
 }
-
