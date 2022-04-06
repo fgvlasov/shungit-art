@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { loadCart, addItem } from '../store/actions';
+import { loadCart, addItem, removeItem } from '../store/actions';
 import Image from 'next/image';
 
 import styles from "../styles/Cart.module.scss";
@@ -45,9 +45,17 @@ const Cart = () => {
 				items.length > 0 && items.map(({ id, title, image, price }) => {
 					return (
 						<div key={id} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-							<div>
-								<p>{title}</p>
-								<p>{price} $</p>
+							<div style={{ display: 'flex', alignItems: 'center' }}>
+								<button
+									onClick={() => dispatch(removeItem(id))}
+									style={{ color: '#fff', backgroundColor: 'red', marginRight: '1rem' }}
+								>
+									Remove
+								</button>
+								<div>
+									<p>{title}</p>
+									<p>{price} $</p>
+								</div>
 							</div>
 							<div>
 								<Image src={image} alt={title} width={75} height={75} />
