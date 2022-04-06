@@ -1,32 +1,45 @@
-import useSWR from 'swr'
-import Product from '../../components/Product'
-import CatalogMenu from '../../components/CatalogMenu'
-import styles from "../../styles/Catalog.module.scss"
+// import useSWR from 'swr';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import Product from '../../components/Product';
+import CatalogMenu from '../../components/CatalogMenu';
+import { loadProducts } from '../../store/actions';
 
-const fetcher = (url) => fetch(url).then((res) => res.json())
+import styles from "../../styles/Catalog.module.scss";
 
-export default function Products({ product }) {
-  const { data, error } = useSWR('/api/cards', fetcher)
+// const fetcher = (url) => fetch(url).then((res) => res.json())
 
-  if (error) return <div>Failed to load</div>
-  if (!data) return <div>Loading...</div>
+export default function Products() {
+	// const { data, error } = useSWR('/api/cards', fetcher)
+	const dispatch = useDispatch();
+	const products = useSelector(state => state.products);
+	const productsData = products.products;
+	const error = products.error;
+	const loading = products.loading;
+
+	useEffect(() => {
+		dispatch(loadProducts());
+	}, [dispatch]);
 
 	return (
-	  <>
-		<h1 className={styles.catalog_title}>Catalog of Shungite Art</h1>
-		<div className={styles.catalog}>
-			<CatalogMenu />
-		  <div className={styles.catalog_list}>
-      		{data.map((p, i) => {
-        		if(p.type == 'Shungite Art'){
-				  return (
-					<Product key={i} product={p} />
-				  )
-				}
-			  }
-			)}
-      	  </div>
-		</div>
-	</>
-  )
+		<>
+			<h1 className={styles.catalog_title}>Catalog of Shungite Art</h1>
+			<div className={styles.catalog}>
+				<CatalogMenu />
+				<div className={styles.catalog_list}>
+					{loading
+						? <div>Loading... </div>
+						: error
+							? <div>Failed to load </div>
+							: productsData && productsData.length > 0 && productsData.map((p, i) => {
+								if (p.type == 'Shungite Art') {
+									return (
+										<Product key={i} product={p} />
+									);
+								}
+							})}
+				</div>
+			</div>
+		</>
+	);
 }

@@ -1,5 +1,13 @@
-import { LOAD_CART, ADD_ITEM, REMOVE_ITEM } from './types';
+import { LOAD_PRODUCTS, LOAD_CART, ADD_ITEM, REMOVE_ITEM } from './types';
 
+// products
+export const loadProducts = () => {
+  return {
+    type: LOAD_PRODUCTS,
+  };
+};
+
+// cart
 export const loadCart = () => {
   return {
     type: LOAD_CART,
