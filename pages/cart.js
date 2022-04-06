@@ -42,7 +42,7 @@ export default function Page() {
 				</p>
 			</div>
 			{
-				items.length && items.map(({ id, title, image, price }) => {
+				items.length > 0 && items.map(({ id, title, image, price }) => {
 					return (
 						<div key={id} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
 							<div>

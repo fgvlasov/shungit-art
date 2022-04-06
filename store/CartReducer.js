@@ -1,5 +1,5 @@
 import { LOAD_CART, ADD_ITEM } from './types';
-import { cards } from '../data';
+// import { cards } from '../data';
 
 const initialState = {
     loading: false,
@@ -13,7 +13,7 @@ const initialState = {
 export const cartReducer = (state = initialState, action) => {
     switch (action.type) {
         case LOAD_CART:
-            return { ...state, loading: false, error: false, cart: cards };
+            return { ...state, loading: false, error: false, cart: [] };
         case ADD_ITEM:
             return { ...state, loading: false, error: false, cart: [...state.cart, action.item] };
         default: return state;
