@@ -38,8 +38,13 @@ export const cartReducer = (state = initialState, action) => {
                     : [...state.items, updatedOrNewCartItem],
                 totalPrice: state.totalPrice + itemPrice
             };
-        case REMOVE_ITEM: // --> HomeWork for Fedor
-            return { ...state, isLoaded: true, items: state.items.filter(item => action.id !== item.id), };
+        case REMOVE_ITEM:
+            // --> HomeWork for Fedor: 1. Remove only one item 2. Reduce price in right way
+            return {
+                ...state,
+                isLoaded: true,
+                items: state.items.filter(item => action.id !== item.id),
+            };
         default: return state;
     }
 };
