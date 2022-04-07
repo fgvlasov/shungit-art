@@ -23,7 +23,7 @@ const Cart = () => {
 				{items.length > 0
 					? items.map((p, i) => {
 						return (
-							<Product key={i} product={p} buttons={false} />
+							<Product key={i} product={p} />
 						);
 					})
 					: (

@@ -2,12 +2,15 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from "../styles/Product.module.scss";
 
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addItem, removeItem } from '../store/actions';
 
-export default function Product({ product, buttons = true }) {
-
+export default function Product({ product }) {
 	const dispatch = useDispatch();
+	const cart = useSelector(state => state.cart);
+	const items = cart.items;
+
+	const isItemInCart = items.find(item => item.id === product.id);
 
 	return (
 		<div className={styles.pr_item}>
@@ -20,13 +23,7 @@ export default function Product({ product, buttons = true }) {
 				</Link>
 			</div>
 			<div className={styles.pr_item_price}>$ {product.price}</div>
-			{
-				buttons &&
-				<>
-					<button className={styles.pr_item_add} onClick={() => dispatch(addItem(product))}>Добавить в корзину</button>
-					<button className={styles.pr_item_add} onClick={() => dispatch(removeItem(product.id))}>Удалить из корзины {product.id}</button>
-				</>
-			}
-		</div>
+			<button className={styles.pr_item_add} onClick={() => dispatch(addItem(product))}>Добавить в корзину</button>
+			{isItemInCart && <button className={styles.pr_item_add} onClick={() => dispatch(removeItem(product.id))}>Удалить из корзины {product.id}</button>}		</div>
 	);
 }
