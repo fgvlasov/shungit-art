@@ -2,12 +2,19 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from "../styles/Product.module.scss";
 
-import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { addItem, removeItem } from '../store/actions';
+import { loadCart } from '../store/actions';
 
 export default function Product({ product }) {
 
 	const dispatch = useDispatch();
+	const cart = useSelector(state => state.cart);
+	
+	useEffect(() => {
+		dispatch(loadCart());
+	}, [dispatch]);
 
 	return (
 		<div className={styles.pr_item}>
@@ -20,8 +27,10 @@ export default function Product({ product }) {
 				</Link>
 			</div>
 			<div className={styles.pr_item_price}>$ {product.price}</div>
-			<button className={styles.pr_item_add} onClick={() => dispatch(addItem(product))}>Добавить в корзину</button>
-			<button className={styles.pr_item_add} onClick={() => dispatch(removeItem(product.id))}>Удалить из корзины {product.id}</button>
+			{cart.cart.includes(product)
+				? <button className={styles.pr_item_add} onClick={() => dispatch(removeItem(product.id))}>Remove {product.id}</button>
+				: <button className={styles.pr_item_add} onClick={() => dispatch(addItem(product))}>Add to cart</button>
+			}
 		</div>
 	);
 }

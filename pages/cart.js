@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { loadCart } from '../store/actions';
-import Product from '../components/product'
+import Product from '../components/Product'
 import styles from "../styles/Catalog.module.scss"
 
 
@@ -16,7 +16,7 @@ const Cart = () => {
   			)
 		)
 	);
-
+	
 	useEffect(() => {
 		dispatch(loadCart());
 	}, [dispatch]);
