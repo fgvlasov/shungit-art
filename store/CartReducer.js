@@ -4,18 +4,44 @@ import { LOAD_CART, ADD_ITEM, REMOVE_ITEM } from './types';
 const initialState = {
     loading: false,
     error: false,
-    cart: []
+    items: [],
+    totalPrice: 0
 };
 
- 
 export const cartReducer = (state = initialState, action) => {
     switch (action.type) {
         case LOAD_CART:
-            return { ...state, loading: false, error: false, cart: [...state.cart] };
+            return { ...state, loading: false, error: false, items: [...state.items] };
         case ADD_ITEM:
-            return { ...state, loading: false, error: false, cart: [...state.cart, action.item] };
-        case REMOVE_ITEM:
-            return { ...state, loading: false, error: false, cart: state.cart.filter(item => action.id !== item.id), };
+            const addedItem = action.item;
+            const itemPrice = addedItem.price;
+
+            let updatedOrNewCartItem;
+            const founded = state.items.find(item => item.id === addedItem.id);
+
+            if (founded) {
+                updatedOrNewCartItem = {
+                    ...founded,
+                    quantity: founded.quantity + 1
+                };
+            } else {
+                updatedOrNewCartItem = {
+                    ...addedItem,
+                    quantity: 1,
+                };
+            }
+
+            return {
+                ...state,
+                loading: false,
+                error: false,
+                items: founded
+                    ? [...state.items.filter(item => item.id !== addedItem.id), updatedOrNewCartItem]
+                    : [...state.items, updatedOrNewCartItem],
+                totalPrice: state.totalPrice + itemPrice
+            };
+        case REMOVE_ITEM: // --> HomeWork for Fedor
+            return { ...state, loading: false, error: false, items: state.items.filter(item => action.id !== item.id), };
         default: return state;
     }
 };
