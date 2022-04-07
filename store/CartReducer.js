@@ -18,12 +18,7 @@ export const cartReducer = (state = initialState, action) => {
             let updatedOrNewCartItem;
             const founded = state.items.find(item => item.id === addedItem.id);
 
-            if (founded) {
-                updatedOrNewCartItem = {
-                    ...founded,
-                    quantity: founded.quantity + 1
-                };
-            } else {
+            if (!founded) {
                 updatedOrNewCartItem = {
                     ...addedItem,
                     quantity: 1,
@@ -34,7 +29,12 @@ export const cartReducer = (state = initialState, action) => {
                 ...state,
                 isLoaded: true,
                 items: founded
-                    ? [...state.items.filter(item => item.id !== addedItem.id), updatedOrNewCartItem]
+                    ? [...state.items.map(item => {
+                        if (item.id === founded.id) {
+                            item.quantity += 1;
+                        }
+                        return item;
+                    })]
                     : [...state.items, updatedOrNewCartItem],
                 totalPrice: state.totalPrice + itemPrice
             };
