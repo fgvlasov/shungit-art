@@ -9,12 +9,13 @@ import styles from "../styles/Catalog.module.scss";
 const Cart = () => {
 	const dispatch = useDispatch();
 	const cart = useSelector(state => state.cart);
+	const isLoaded = cart.isLoaded;
 	const items = cart.items;
 	const totalPrice = cart.totalPrice;
 
 	useEffect(() => {
-		dispatch(loadCart());
-	}, [dispatch]);
+		!isLoaded && dispatch(loadCart());
+	}, [isLoaded, dispatch]);
 
 	return (
 		<div className={styles.catalog}>
@@ -28,7 +29,7 @@ const Cart = () => {
 					})
 					: (
 						<div>
-							<p>No items in your cart yet</p>
+							<p style={{ color: 'grey' }}>No items in your cart yet</p>
 							<Link href="/products">Go to shop</Link>
 						</div>
 					)

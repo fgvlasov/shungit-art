@@ -2,8 +2,7 @@ import { LOAD_CART, ADD_ITEM, REMOVE_ITEM } from './types';
 // import { cards } from '../data';
 
 const initialState = {
-    loading: false,
-    error: false,
+    isLoaded: false,
     items: [],
     totalPrice: 0
 };
@@ -11,7 +10,7 @@ const initialState = {
 export const cartReducer = (state = initialState, action) => {
     switch (action.type) {
         case LOAD_CART:
-            return { ...state, loading: false, error: false, items: [...state.items] };
+            return { ...state, isLoaded: true, items: [...state.items] };
         case ADD_ITEM:
             const addedItem = action.item;
             const itemPrice = addedItem.price;
@@ -33,15 +32,14 @@ export const cartReducer = (state = initialState, action) => {
 
             return {
                 ...state,
-                loading: false,
-                error: false,
+                isLoaded: true,
                 items: founded
                     ? [...state.items.filter(item => item.id !== addedItem.id), updatedOrNewCartItem]
                     : [...state.items, updatedOrNewCartItem],
                 totalPrice: state.totalPrice + itemPrice
             };
         case REMOVE_ITEM: // --> HomeWork for Fedor
-            return { ...state, loading: false, error: false, items: state.items.filter(item => action.id !== item.id), };
+            return { ...state, isLoaded: true, items: state.items.filter(item => action.id !== item.id), };
         default: return state;
     }
 };

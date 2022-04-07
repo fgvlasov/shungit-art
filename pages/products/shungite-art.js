@@ -14,12 +14,11 @@ export default function Products() {
 	const dispatch = useDispatch();
 	const products = useSelector(state => state.products);
 	const productsData = products.products;
-	const error = products.error;
-	const loading = products.loading;
+	const isLoaded = products.isLoaded;
 
 	useEffect(() => {
-		dispatch(loadProducts());
-	}, [dispatch]);
+		!isLoaded && dispatch(loadProducts());
+	}, [isLoaded, dispatch]);
 
 	return (
 		<>
@@ -27,17 +26,15 @@ export default function Products() {
 			<div className={styles.catalog}>
 				<CatalogMenu />
 				<div className={styles.catalog_list}>
-					{loading
+					{!isLoaded
 						? <div>Loading... </div>
-						: error
-							? <div>Failed to load </div>
-							: productsData && productsData.length > 0 && productsData.map((p, i) => {
-								if (p.type == 'Shungite Art') {
-									return (
-										<Product key={i} product={p} />
-									);
-								}
-							})}
+						: productsData && productsData.length > 0 && productsData.map(product => {
+							if (product.type == 'Shungite Art') {
+								return (
+									<Product key={product.id} product={product} />
+								);
+							}
+						})}
 				</div>
 			</div>
 		</>
