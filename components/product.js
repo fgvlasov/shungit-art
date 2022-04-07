@@ -23,7 +23,7 @@ export default function Product({ product }) {
 				</Link>
 			</div>
 			<div className={styles.pr_item_price}>$ {product.price}</div>
-			<button className={styles.pr_item_add} onClick={() => dispatch(addItem(product))}>Добавить в корзину</button>
-			{isItemInCart && <button className={styles.pr_item_add} onClick={() => dispatch(removeItem(product.id))}>Удалить из корзины {product.id}</button>}		</div>
+			<button className={styles.pr_item_add} onClick={() => dispatch(addItem(product))}>{isItemInCart ? 'Добавить еще один' : 'Добавить в корзину'}</button>
+			{isItemInCart && <button className={styles.pr_item_add} onClick={() => dispatch(removeItem(product.id))}>Удалить из корзины</button>}		</div>
 	);
 }
